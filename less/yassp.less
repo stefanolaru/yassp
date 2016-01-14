@@ -1,0 +1,104 @@
+@import 'elements.less';
+@import 'fonts.less';
+
+#yassp-share {
+	width: 100%;
+	float: left;
+	padding: 0;
+	margin: 0 0 20px 0;
+	li {
+		float: left;
+		display: inline;
+		a {
+			float: left;
+			padding: 6px 8px;
+			margin: 0 5px 5px 0;
+			text-decoration: none;
+			.rounded(2px);
+			&:before {
+				color: #FFF;
+				line-height: 1em;
+				font-size: 21px;
+				bottom: -1px;
+				position: relative;
+				float: left;
+			}
+			span {
+				color: #FFF;
+				line-height: 21px;
+				height: 21px;
+				font-size: 14px;
+				width: 20px;
+				float: left;
+				overflow: hidden;
+				text-align: center;
+				.opacity(1);
+			}
+			&:hover {
+				.transition-duration(.2s);
+			}
+		}
+		/*
+		&.totals {
+			margin: 0 5px 5px 0;
+			padding: 3px 12px;
+			text-align: center;
+			font-size: 12px;
+			line-height: 1.2em;
+			height: 33px;
+			background-color: #EEE;
+			strong {
+				display: block;
+			}
+		}
+		*/
+		&.facebook {
+			a {
+				background: rgb(59, 89, 152);
+				&:hover {
+					background: lighten(rgb(59, 89, 152), 5%);
+				}
+			}
+		}
+		&.twitter {
+			a {
+				background: rgb(0, 172, 237);
+				&:hover {
+					background: lighten(rgb(0, 172, 237), 5%);
+				}
+			}
+		}
+		&.linkedin {
+			a {
+				background: rgb(0, 123, 182);
+				&:hover {
+					background: lighten(rgb(0, 123, 182), 5%);
+				}
+			}
+		}
+		&.googleplus {
+			a {
+				background:  rgb(221, 75, 57);
+				&:hover {
+					background:  lighten(rgb(221, 75, 57), 5%);
+				}
+			}
+		}
+		&.pinterest {
+			a {
+				background: rgb(203, 32, 39);
+				&:hover {
+					background: lighten(rgb(203, 32, 39), 5%);
+				}
+			}
+		}
+		&.tumblr {
+			a {
+				background: rgb(44, 71, 98);
+				&:hover {
+					background: lighten(rgb(44, 71, 98), 5%);
+				}
+			}
+		}
+	}
+}
